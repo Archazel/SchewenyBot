@@ -5,7 +5,7 @@ const YAML = require('yamljs');
 const path = require('path');
 
 const config = YAML.load(path.resolve(__dirname, 'config.yml'));
-require('dotenv').config;
+require('dotenv').config();
 
 const client = new ShewenyClient({
   intents: [1 << 0, 1 << 1, 1 << 2, 1 << 8, 1 << 9, 1 << 10, 1 << 12],
