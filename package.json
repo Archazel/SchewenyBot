@@ -1,0 +1,22 @@
+{
+    "name": "sheweny",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node ./src/index.js",
+        "dev": "nodemon --watch ./src/index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "discord.js": "^13.1.0",
+        "dotenv": "^10.0.0",
+        "sheweny": "1.0.0-beta.2",
+        "yamljs": "^0.3.0"
+    },
+    "devDependencies": {
+        "nodemon": "*"
+    }
+}
