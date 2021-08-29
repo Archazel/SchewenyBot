@@ -7,7 +7,11 @@ require('dotenv').config();
 const client = new ShewenyClient({
   intents: [1 << 0, 1 << 1, 1 << 2, 1 << 8, 1 << 9, 1 << 10, 1 << 12],
   partials: ["CHANNEL", "GUILD_MEMBER", "MESSAGE", "REACTION", "USER"],
-
+  allowedMentions: {
+    parse: [
+      "users", "roles", "everyone",
+    ],
+  },
 
   presence: {
     activities: [
