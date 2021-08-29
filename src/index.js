@@ -24,7 +24,7 @@ const client = new ShewenyClient({
   handlers: {
     applicationCommands: {
       directory: "./commands",
-      guildId: '619934518320562178',
+      // guildId: 'somecrazyID', If you don't want global commands, remove the // and insert your guild ID.
     },
     events: {
       directory: "./events",
