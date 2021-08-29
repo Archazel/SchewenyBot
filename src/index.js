@@ -1,10 +1,7 @@
 'use strict';
 
 const { ShewenyClient } = require("sheweny");
-const YAML = require('yamljs');
-const path = require('path');
 
-const config = YAML.load(path.resolve(__dirname, 'config.yml'));
 require('dotenv').config();
 
 const client = new ShewenyClient({
